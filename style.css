@@ -1,40 +1,58 @@
-@import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@900&family=Beau+Rivage&family=Emily%27s+Candy&family=Borel&family=Caveat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Emily%27s+Candy&family=Elsie+Swash+Caps:wght@900&display=swap');
 
 body {
-  background-color: #fdf3ff;
+  background-color: lavender;
+  font-family: 'Emily\'s Candy', cursive;
   color: #663399;
-  font-family: 'Borel', cursive;
-  transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
 h1, h2, h3 {
   font-family: 'Elsie Swash Caps', cursive;
-  color: #BA55D3;
-  text-shadow: 2px 2px 5px rgba(186, 85, 211, 0.5);
-}
-
-h1 {
-  font-size: 2.5rem;
-}
-
-h2 {
-  font-size: 2rem;
-  border-bottom: 3px dashed #800080;
-  padding-bottom: 10px;
-}
-
-h3 {
-  font-size: 1.8rem;
-  color: #4B0082;
-  border: 2px dashed #DA70D6;
-  border-radius: 8px;
-  padding: 10px;
   text-align: center;
 }
 
+h1 {
+  font-size: 3rem;
+  color: #BA55D3;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+h2 {
+  color: #800080;
+  font-size: 2rem;
+}
+
+h3 {
+  color: #4B0082;
+  border: 3px dotted #DA70D6;
+  padding: 10px;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+}
+
+h3:hover {
+  transform: scale(1.1);
+}
+
 p {
-  font-size: 1.1rem;
-  font-family: 'Caveat', cursive;
+  font-size: 1.2rem;
+}
+
+button {
+  background-color: #FF69B4;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #FF1493;
+  transform: scale(1.1);
 }
 
 img {
@@ -46,155 +64,43 @@ img {
 }
 
 img:hover {
-  transform: scale(1.1);
+  transform: rotate(5deg);
 }
 
-button {
-  background-color: #BA55D3;
-  color: white;
-  font-size: 1.2rem;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  font-family: 'Emily\'s Candy', cursive;
-  transition: 0.3s ease;
-}
-
-button:hover {
-  background-color: #800080;
-  transform: scale(1.1);
-}
-
-/* Light/Dark mode toggle */
-.toggle-btn {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  background-color: #FFFACD;
-  padding: 8px 15px;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-
-.toggle-btn:hover {
-  background-color: #FFD700;
-}
-
-/* Floating back-to-top button */
-#backToTop {
-  display: none;
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  background-color: #800080;
-  color: white;
-  padding: 10px 15px;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
-}
-
-#backToTop:hover {
-  background-color: #BA55D3;
-}
-
-body {
-  background: linear-gradient(to bottom right, #f5e1ff, #fff0f5);
-  font-family: 'Playfair Display', serif;
-  text-align: center;
-  margin: 0;
+ul {
+  list-style: none;
   padding: 0;
 }
 
-
-h1 {
-  color: #BA55D3;
-  font-family: 'Elsie Swash Caps', cursive;
-  font-size: 2.8em;
-  text-shadow: 2px 2px 5px rgba(138, 43, 226, 0.3);
-}
-
-h2 {
-  color: #800080;
-  font-family: 'Beau Rivage', cursive;
-  font-size: 2.2em;
-}
-
-h3 {
-  color: #4B0082;
-  font-size: 1.5em;
-  font-weight: bold;
-  border: 4px dotted rgb(218, 112, 214);
-  border-radius: 10px;
+ul li {
+  background-color: #FFFACD;
   padding: 10px;
-  margin: 20px auto;
-  width: 60%;
-  background-color: rgba(255, 255, 255, 0.6);
-}
-
-
-li {
-  font-size: 1.2em;
-  color: #663399;
-  font-family: 'Lucida Sans', sans-serif;
-  margin-bottom: 8px;
-  list-style-type: "🍇";
-}
-
-/* Styled Image */
-img {
-  border-radius: 15px;
-  border: 5px solid #BA55D3;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-img:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 5px 15px rgba(186, 85, 211, 0.5);
-}
-
-
-table {
-  width: 60%;
-  margin: auto;
-  background: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(10px);
+  margin: 5px;
   border-radius: 10px;
-  padding: 15px;
-  border-collapse: collapse;
-}
-
-th, td {
-  padding: 12px;
-  text-align: center;
-  border-bottom: 2px solid #DDA0DD;
-}
-
-tr:hover {
-  background-color: #E6C5E6;
-  transition: 0.3s ease-in-out;
-}
-
-
-.button {
-  background-color: #BA55D3;
-  color: white;
-  padding: 10px 20px;
-  font-size: 1.2em;
-  border: none;
-  border-radius: 20px;
-  font-weight: bold;
   cursor: pointer;
-  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
-.button:hover {
+ul li.checked {
+  text-decoration: line-through;
+  background-color: #FFD700;
+}
+
+.dark-mode {
+  background-color: #4B0082 !important;
+  color: #F8C8DC !important;
+}
+
+.dark-mode h1, .dark-mode h2, .dark-mode h3 {
+  color: #FFD700 !important;
+}
+
+.dark-mode ul li {
   background-color: #800080;
-  transform: scale(1.1);
+  color: white;
 }
 
-html {
-  scroll-behavior: smooth;
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
