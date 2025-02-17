@@ -8,7 +8,7 @@ body {
 
 h1, h2, h3, h4 {
   font-family: 'Borel', cursive;
-  font-size: 2rem;
+  font-size: 2.5rem;  /* Larger fonts */
 }
 
 h1 {
@@ -19,12 +19,12 @@ h1 {
 
 h2 {
   color: #800080;
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 h3 {
   color: #4B0082;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   border: 3px dotted #DA70D6;
   padding: 10px;
   width: fit-content;
@@ -45,7 +45,7 @@ h4 {
 p, li {
   font-family: 'Annie Use Your Telescope', cursive;
   color: #663399;
-  font-size: 1.3rem;
+  font-size: 2rem;  /* Larger fonts */
 }
 
 ul {
@@ -55,9 +55,9 @@ ul {
 
 li {
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 2rem;
   transition: all 0.3s ease-in-out;
-  padding: 10px;
+  padding: 15px;
   border-radius: 10px;
 }
 
