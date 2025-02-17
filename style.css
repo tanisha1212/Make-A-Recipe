@@ -1,4 +1,105 @@
-/* Whimsical Background */
+@import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@900&family=Beau+Rivage&family=Emily%27s+Candy&family=Borel&family=Caveat:wght@700&display=swap');
+
+body {
+  background-color: #fdf3ff;
+  color: #663399;
+  font-family: 'Borel', cursive;
+  transition: background-color 0.5s ease-in-out;
+}
+
+h1, h2, h3 {
+  font-family: 'Elsie Swash Caps', cursive;
+  color: #BA55D3;
+  text-shadow: 2px 2px 5px rgba(186, 85, 211, 0.5);
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  border-bottom: 3px dashed #800080;
+  padding-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.8rem;
+  color: #4B0082;
+  border: 2px dashed #DA70D6;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+
+p {
+  font-size: 1.1rem;
+  font-family: 'Caveat', cursive;
+}
+
+img {
+  height: 350px;
+  width: 230px;
+  border-radius: 20px;
+  border: 5px solid #DA70D6;
+  transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+button {
+  background-color: #BA55D3;
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Emily\'s Candy', cursive;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #800080;
+  transform: scale(1.1);
+}
+
+/* Light/Dark mode toggle */
+.toggle-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #FFFACD;
+  padding: 8px 15px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background-color: #FFD700;
+}
+
+/* Floating back-to-top button */
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #800080;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+#backToTop:hover {
+  background-color: #BA55D3;
+}
+
 body {
   background: linear-gradient(to bottom right, #f5e1ff, #fff0f5);
   font-family: 'Playfair Display', serif;
@@ -7,7 +108,7 @@ body {
   padding: 0;
 }
 
-/* Heading Styles */
+
 h1 {
   color: #BA55D3;
   font-family: 'Elsie Swash Caps', cursive;
@@ -33,7 +134,7 @@ h3 {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-/* Whimsical List Styling */
+
 li {
   font-size: 1.2em;
   color: #663399;
@@ -54,7 +155,7 @@ img:hover {
   box-shadow: 0px 5px 15px rgba(186, 85, 211, 0.5);
 }
 
-/* Table Styling */
+
 table {
   width: 60%;
   margin: auto;
@@ -76,7 +177,7 @@ tr:hover {
   transition: 0.3s ease-in-out;
 }
 
-/* Buttons for Interactivity */
+
 .button {
   background-color: #BA55D3;
   color: white;
@@ -94,7 +195,6 @@ tr:hover {
   transform: scale(1.1);
 }
 
-/* Smooth Scroll Effect */
 html {
   scroll-behavior: smooth;
 }
