@@ -88,7 +88,15 @@
     }
 
     function toggleCheck(item) {
+      // Toggle the checked (cross out) effect
       item.classList.toggle("checked");
+
+      // If the item is checked, make the font bigger
+      if (item.classList.contains("checked")) {
+        item.style.fontSize = "2.5rem";  // Increase font size when checked
+      } else {
+        item.style.fontSize = "2rem";  // Revert font size when unchecked
+      }
     }
   </script>
 
