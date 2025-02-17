@@ -1,106 +1,111 @@
-@import url('https://fonts.googleapis.com/css2?family=Emily%27s+Candy&family=Elsie+Swash+Caps:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Sofia|Annie+Use+Your+Telescope|Borel');
 
 body {
   background-color: lavender;
-  font-family: 'Emily\'s Candy', cursive;
-  color: #663399;
+  font-family: 'Sofia', cursive;
   transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
-h1, h2, h3 {
-  font-family: 'Elsie Swash Caps', cursive;
-  text-align: center;
+h1, h2, h3, h4 {
+  font-family: 'Borel', cursive;
 }
 
 h1 {
-  font-size: 3rem;
   color: #BA55D3;
-  animation: fadeIn 1.5s ease-in-out;
+  text-shadow: 2px 2px 5px pink;
+  animation: fadeIn 1s ease-in-out;
 }
 
 h2 {
   color: #800080;
-  font-size: 2rem;
 }
 
 h3 {
   color: #4B0082;
   border: 3px dotted #DA70D6;
   padding: 10px;
-  display: inline-block;
-  transition: transform 0.3s ease-in-out;
-}
-
-h3:hover {
-  transform: scale(1.1);
-}
-
-p {
-  font-size: 1.2rem;
-}
-
-button {
-  background-color: #FF69B4;
-  color: white;
-  font-size: 1.2rem;
-  border: none;
-  padding: 10px 20px;
+  width: fit-content;
+  margin: auto;
   border-radius: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  background: rgba(255, 182, 193, 0.3);
+  animation: pop 0.5s ease-in-out;
 }
 
-button:hover {
-  background-color: #FF1493;
+h4 {
+  background-color: lemonchiffon;
+  color: #8B008B;
+  padding: 5px;
+  width: fit-content;
+  border-radius: 10px;
+}
+
+p, li {
+  font-family: 'Annie Use Your Telescope', cursive;
+  color: #663399;
+  font-size: 16px;
+}
+
+li {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+li:hover {
+  color: darkorchid;
   transform: scale(1.1);
 }
 
 img {
   height: 350px;
   width: 230px;
-  border-radius: 20px;
-  border: 5px solid #DA70D6;
-  transition: transform 0.3s ease-in-out;
+  border-radius: 50%;
+  border: 7px dotted rgb(218, 112, 214);
+  transition: transform 0.5s ease-in-out;
 }
 
 img:hover {
-  transform: rotate(5deg);
+  transform: rotate(5deg) scale(1.1);
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-ul li {
-  background-color: #FFFACD;
-  padding: 10px;
-  margin: 5px;
-  border-radius: 10px;
+button {
+  background-color: pink;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-family: 'Borel', cursive;
+  border-radius: 20px;
   cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
 }
 
-ul li.checked {
-  text-decoration: line-through;
-  background-color: #FFD700;
+button:hover {
+  background: purple;
 }
 
 .dark-mode {
-  background-color: #4B0082 !important;
-  color: #F8C8DC !important;
+  background-color: #4B0082;
+  color: #F8C8DC;
 }
 
-.dark-mode h1, .dark-mode h2, .dark-mode h3 {
-  color: #FFD700 !important;
+.dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4 {
+  color: #F8C8DC;
 }
 
-.dark-mode ul li {
+.dark-mode li {
+  color: #E6E6FA;
+}
+
+.dark-mode button {
   background-color: #800080;
-  color: white;
 }
 
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
+}
+
+@keyframes pop {
+  0% { transform: scale(0.9); }
+  100% { transform: scale(1); }
 }
