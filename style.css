@@ -8,20 +8,23 @@ body {
 
 h1, h2, h3, h4 {
   font-family: 'Borel', cursive;
+  font-size: 2rem;
 }
 
 h1 {
   color: #BA55D3;
-  text-shadow: 2px 2px 5px pink;
+  text-shadow: 3px 3px 5px pink;
   animation: fadeIn 1s ease-in-out;
 }
 
 h2 {
   color: #800080;
+  font-size: 1.8rem;
 }
 
 h3 {
   color: #4B0082;
+  font-size: 1.5rem;
   border: 3px dotted #DA70D6;
   padding: 10px;
   width: fit-content;
@@ -42,17 +45,32 @@ h4 {
 p, li {
   font-family: 'Annie Use Your Telescope', cursive;
   color: #663399;
-  font-size: 16px;
+  font-size: 1.3rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
 }
 
 li {
   cursor: pointer;
+  font-size: 1.5rem;
   transition: all 0.3s ease-in-out;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 li:hover {
   color: darkorchid;
   transform: scale(1.1);
+}
+
+.checked {
+  text-decoration: line-through;
+  color: grey;
+  opacity: 0.6;
+  background-color: rgba(255, 182, 193, 0.3);
 }
 
 img {
@@ -71,16 +89,17 @@ button {
   background-color: pink;
   color: white;
   border: none;
-  padding: 10px 15px;
-  font-size: 16px;
+  padding: 15px 20px;
+  font-size: 1.5rem;
   font-family: 'Borel', cursive;
   border-radius: 20px;
   cursor: pointer;
-  transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
 button:hover {
   background: purple;
+  transform: scale(1.1);
 }
 
 .dark-mode {
